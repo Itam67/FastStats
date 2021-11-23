@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Our World in Data: Fact Enricher",
+    "version": "0.1",
+    "content_scripts": [
+        {
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "128":"Icon.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Run the fact finder"
+    },
+    "permissions": ["tabs","webRequest"]
+
+}
+
